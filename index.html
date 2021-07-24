@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leader Board</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/25b97a3767.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: #e6e6e6;;">
     <!-- header start -->
     <header>
-
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #562EFF;">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/icons/logo.png" alt="" width="41" height="51">  
+                <span class="ms-3 text-white">Idea</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                  <li class="nav-item me-4">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="images/icons/profile.png" alt="" width="51" height="51" class="d-inline-block align-text-top">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- header end -->
     <main>
         <!-- top player and top blogs -->
-        <section class="container">
+        <section class="containar">
             <h2 class="section-title">Top Players</h2>
             <div class="top-players">
                 <div class="players">
@@ -102,9 +130,9 @@
                 </div>
             </div>
         </section>
+        
         <!-- latest courses -->
-
-        <section class="container">
+        <section class="containar containar-2">
             <h2 class="section-title">Latest Course</h2>
             <div class="courses">
                 <div class="course">
@@ -195,5 +223,6 @@
             </div>
         </section>
     </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
